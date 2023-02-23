@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector("#hamb"),o=document.querySelector("#popup"),c=document.body,t=document.querySelector("#menu").cloneNode(1);function n(){o.classList.remove("open"),e.classList.remove("active"),c.classList.remove("noscroll")}e.addEventListener("click",(function(n){n.preventDefault(),o.classList.toggle("open"),e.classList.toggle("active"),c.classList.toggle("noscroll"),o.appendChild(t)})),Array.from(t.children).forEach((function(e){e.addEventListener("click",n)}))}();
+//# sourceMappingURL=index.f39c3693.js.map

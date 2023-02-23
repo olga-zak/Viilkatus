@@ -1,0 +1,2 @@
+const e=document.querySelector("#hamb"),o=document.querySelector("#popup"),c=document.body,t=document.querySelector("#menu").cloneNode(1);e.addEventListener("click",(function(s){s.preventDefault(),o.classList.toggle("open"),e.classList.toggle("active"),c.classList.toggle("noscroll"),o.appendChild(t)}));function s(){o.classList.remove("open"),e.classList.remove("active"),c.classList.remove("noscroll")}Array.from(t.children).forEach((e=>{e.addEventListener("click",s)}));
+//# sourceMappingURL=index.f296dcce.js.map
