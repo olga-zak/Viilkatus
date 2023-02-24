@@ -142,12 +142,14 @@ body {
 
     right: -100%;
     top: -100%;
+    opacity: 0;
     transition: all 0.8s ease-in-out;
   }
 
   .popup.open {
     top: 58px;
     right: 0;
+    opacity: 1;
   }
 
   .popup .menu {
