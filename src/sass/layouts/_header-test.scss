@@ -1,4 +1,5 @@
 .header-test {
+  border-bottom: 2px solid $accentColor;
   // padding-top: 10px;
   // padding-bottom: 10px;
   // outline: 2px solid red;
@@ -49,7 +50,7 @@ body {
   // top: 0;
   width: 100%;
   height: 57px;
-  background: #7a52b3;
+  background: $backgroundColor;
 }
 
 .navbar__wrap {
@@ -95,7 +96,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  color: rgba(255, 255, 255, 0.7);
+  color: red;
 }
 
 .navbar__wrap .menu > li > a:hover {
@@ -131,18 +132,19 @@ body {
 
   .popup {
     position: fixed;
-    top: 75px;
-    left: -100%;
+    //left: -80%;
+    top: -100%;
+    //top: -100%;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: $accentColor;
     z-index: 100;
     display: flex;
-    transition: 0.3s;
+    transition: 0.4s;
   }
 
   .popup.open {
-    left: 0;
+    top: 58px;
   }
 
   .popup .menu {
@@ -152,12 +154,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: start;
-    padding: 50px 0;
+    //padding: 50px 0;
     overflow: auto;
   }
 
   .popup .menu > li {
     width: 100%;
+    border-bottom: 2px solid #c32020;
   }
 
   .popup .menu > li > a {
@@ -167,7 +170,7 @@ body {
     padding: 20px 0;
     font-size: 20px;
     font-weight: bold;
-    color: #3f3f3f;
+    color: #fff;
   }
 
   .popup .menu > li > a:hover {
